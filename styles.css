@@ -1,0 +1,117 @@
+/* styles.css */
+
+body {
+    background-color: rgb(10, 10, 10);
+    animation: fadeIn 0.5s ease-in-out;
+    font-family: sans-serif;
+    color: white;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 6vh;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.upcomingVideos,
+#recentUploadsContainer {
+    width: 45%; /* Adjust width as needed */
+}
+
+.upcomingVideos p,
+#recentUploadsContainer p {
+    font-size: 3vh;
+    text-align: center;
+}
+
+.separator {
+    background-color: rgba(255, 255, 255, 0.315);
+    width: 10%;
+    height: 2px;
+    border-radius: 12vh;
+    margin-bottom: 4vh;
+}
+
+.video-item {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.thumbnail {
+    border-radius: 3vh;
+    height: auto;
+    width: 55%;
+    transition: all ease 0.3s;
+}
+
+.blurredthumbnail{
+    border-radius: 3vh;
+    height: auto;
+    width: 55%;
+    transition: all ease 0.3s;
+    filter: blur(1vh);
+}
+
+.thumbnail:hover,
+.blurredthumbnail:hover {
+    transform: scale(1.04);
+}
+
+.videoTitle {
+    font-size: 1.5vh;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+.blurredvideoTitle{
+    font-size: 1.8vh;
+    filter: blur(1vh);
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+.watchOn {
+    border: 0;
+    border-radius: 1.2vh;
+    height: 3.5vh;
+    width: 33vh;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    font-weight: 800;
+    transition: all ease 0.3s;
+}
+
+
+.blurredwatchOn{
+    border: 0;
+    border-radius: 1.2vh;
+    height: 3.5vh;
+    width: 33vh;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    font-weight: 800;
+    transition: all ease 0.3s;
+    filter: blur(10px);
+}
+
+.watchOn:hover,
+.blurredwatchOn:hover {
+    cursor: pointer;
+    background-color: rgb(255, 0, 0);
+}
+
+.disable-select {
+    user-select: none;
+}
+
+.disable-right-click {
+    pointer-events: none;
+}

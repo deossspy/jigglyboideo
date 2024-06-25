@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jigglyboideo.web</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>jigglyboideo.web</h1>
+
+    <div class="container">
+        <div class="upcomingVideos">
+            <p>Upcoming Videos</p>
+            <div class="video-item">
+                <center><div class="separator"></div></center>
+                <center><img src="thumbnail - Copy.png" class="blurredthumbnail"></center>
+                <center><p class="blurredvideoTitle">So I HARASSED E-GIRLS In Roblox Da Hood...</p></center>
+                <center><button class="blurredwatchOn" id="VIDEO_ID_5">Watch on YouTube</button></center>
+            </div>
+            <div class="video-item">
+                <center><img src="part 3 - Copy.png" class="blurredthumbnail"></center>
+                <center><p class="blurredvideoTitle">SHITTY CLIPS [PART 3]</p></center>
+                <center><button class="blurredwatchOn" id="VIDEO_ID_4">Watch on YouTube</button></center>
+            </div>
+        </div>
+
+        <div id="recentUploadsContainer">
+            <p>Recent Uploads</p>
+            <center><div class="separator"></div></center>
+            <div class="video-item">
+                <center><img src="THUMBNIAL.png" class="thumbnail"></center>
+                <center><p class="videoTitle">💎 ROBLOX BLACKJACK 💎 [MED Maxico]</p></center>
+                <center><button class="watchOn" id="VIDEO_ID_3">Watch on YouTube</button></center>
+            </div>
+            <div class="video-item">
+                <center><img src="iuyhjuy.webp" class="thumbnail"></center>
+                <center><p class="videoTitle">SKITIGA CLIPS ⭐[DEL 2]⭐</p></center>
+                <center><button class="watchOn" id="VIDEO_ID_2">Watch on YouTube</button></center>
+            </div>
+            <div class="video-item">
+                <center><img src="hqdefault.webp" class="thumbnail"></center>
+                <center><p class="videoTitle">skitiga clips del 1</p></center>
+                <center><button class="watchOn" id="VIDEO_ID_1">Watch on YouTube</button></center>
+            </div>
+        </div>
+    </div>
+
+    <center><div class="separator"></div></center>
+    <center><strong><p>jigglyboideo inc !</p></strong></center>
+
+    <script>
+        // JavaScript to disable right-click and text selection
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+
+        document.addEventListener('selectstart', function(e) {
+            e.preventDefault();
+        });
+
+        // JavaScript for handling video clicks
+        const video1 = document.getElementById('VIDEO_ID_1');
+        video1.addEventListener('click', function() {
+            window.location.href = 'https://www.youtube.com/watch?v=-azzJb7m9P4';
+        });
+
+        const video2 = document.getElementById('VIDEO_ID_2');
+        video2.addEventListener('click', function() {
+            window.location.href = 'https://www.youtube.com/watch?v=OVMgefPyvkg';
+        });
+
+        const video3 = document.getElementById('VIDEO_ID_3');
+        video3.addEventListener('click', function() {
+            window.location.href = 'https://www.youtube.com/watch?v=cCmYeb-Mw1A';
+        });
+
+        const video4 = document.getElementById('VIDEO_ID_4');
+        video4.addEventListener('click', function() {
+            window.location.href = 'https://www.youtube.com/@deosspy';
+        });
+
+        const video5 = document.getElementById('VIDEO_ID_5');
+        video5.addEventListener('click', function() {
+            window.location.href = 'https://www.youtube.com/@deosspy';
+        });
+    </script>
+</body>
+</html>
